@@ -1,7 +1,4 @@
 
-[![Build Status](https://travis-ci.org/xmaestro/ng2-tagsinput.svg?branch=master)](https://travis-ci.org/xmaestro/ng2-tagsinput)
-
-
 Installation
 --------------------------------------
 
@@ -15,9 +12,9 @@ Usage
 --------------------------------------
 
 
-### Подключение
+### Including
 
-Подключение декоратора
+Including RouterHelper Service
 
 ```html
 import {RouterHelper} from "ng2-router-helper";
@@ -38,6 +35,9 @@ export class TestComponent {
 }
 ```
 
-- `is(routePath):Observable<boolean>` - проверка на то что 'routePath' является последней частью текущего url 
-- `includes(routePath):Observable<boolean>` - проверка на то что 'routePath' является частью текущего url
+- `is(routePath):Observable<boolean>` - Checking if the <routePath> is the last part of the current URL  
+- `includes(routePath):Observable<boolean>` - Checking if the needed part of the URL matches the <routePath>
 
+### See also
+
+- [Getting current state in Angular 2 router](http://blog.2muchcoffee.com/getting-current-state-in-angular2-router)
